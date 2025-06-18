@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  color: #1d1d1d;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #fff;
+}
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-left: 0px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #1d1d1d;
+  font-weight: 500;
+}
+
+.homepage {
+  color: #0b0c5e;
+  font-weight: 1000;
+  margin-left: -500px;
+}
+
+.nav-right button {
+  background-color: #0b0c5e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  background-color: #f0f2ff;
+}
+
+.hero .text {
+  flex: 1;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero .btns a {
+  padding: 12px 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.primary-btn {
+  background-color: #0b0c5e;
+  color: white;
+}
+
+.secondary-btn {
+  border: 2px solid #0b0c5e;
+  color: #0b0c5e;
+}
+
+.hero img {
+  max-width: 100%;
+  width: 420px;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 60px 10%;
+  gap: 40px;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.section .text {
+  flex: 1;
+  padding: 10px;
+}
+
+.section .image {
+  flex: 1;
+  text-align: center;
+}
+
+.section img {
+  width: 520px;
+  max-width: 100%;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  color: #0b0c5e;
+  margin-bottom: 15px;
+}
+
+.section p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: nowrap;          /* Cards ek line me hi rahein */
+  justify-content: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+
+.feature-card {
+  flex: 1 1 200px;
+  max-width: 350px;
+}
+
+.feature-card img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.pricing {
+  text-align: center;
+  background-color: #eef1ff;
+  padding: 80px 20px;
+}
+
+.pricing h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #0b0c5e;
+}
+
+.pricing p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.pricing h3 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #0b0c5e;
+}
+
+.pricing button {
+  padding: 12px 25px;
+  background-color: #0b0c5e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #e8ebff;
+  padding: 30px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #1d1d1d;
+  margin-bottom: 10px;
+}
+
+footer nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #1d1d1d;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero,
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer nav a {
+    margin: 5px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  nav a {
+    margin: 10px 0;
+    display: block;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+    justify-content: flex-start;
+  }
+
+  .nav-show {
+    display: flex !important;
+  }
+}
